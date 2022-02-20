@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.center{
+    display: flex;
+    /* Por padrao o flex box (no wrap valor padráo)tentará deixar tudo em uma linha só     */
+    
+    flex-wrap: nowrap;
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 2%;
+
+}
+
+html,body{
+    height: 100%;
+    /* a propriedade overflow hidden tira a barra de rolagem */
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    /* Para nao ficar grudado no teto do site */
+    padding:20px 0;
+}
+
+.logo{
+    width: 50%;
+}
+
+.menu{
+    padding-top:30px ;
+    width: 50%;
+    text-align: right;
+}
+
+.menu{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+    /* background-color: blue; */
+
+}
+.extras{
+    position: absolute;
+    bottom:-200px;
+    right:-200px;
+    width: 700;
+    height: 700;
+    /*border radius transforma o quadrado em circulo*/
+    border-radius: 50%;
+    background-color: #017143;
+   
+}
+
+
+.social-midia{
+    position: absolute;
+    right: 205;
+    /* Permite os icones correrem na horizontal para cima ou para baixo */
+    top: 200;
+
+}
+
+/* Permite que os ìcones fique um embaixo do outro */
+.social-midia img{
+    display:block;
+    width: 20;
+    margin: 30 0;
+}
+
+.texto-sobre{
+    margin-top: 10;
+
+}
+
+.texto-sobre{
+    font-size: 30;
+}
+.texto-sobre p{
+    margin: 20 0;
+    color:black;
+    font-size: 14;
+    font-weight: bold;
+    /* Max-width eu ajusto o tamanho que o texto ocupará na página */
+    max-width: 800;
+
+}
+
+.texto-sobre button{
+    border:0;
+    background-color: #017143;
+    color: white;
+    border-radius: 50px;
+    width: 150;
+    height: 30;
+    cursor: pointer;
+
+}
+
+
+
+.copos{
+    /* position: absolute; */
+    transform: translateY(340px);
+    width: 600;
+    margin-left:auto ;
+    margin-right: auto;
+
+    justify-self: center;
+    right: 300;
+    /* Permite os icones correrem na horizontal para cima ou para baixo */
+    /* top: 100; */
+    align-self: center;
+    display:flex;
+    /* background-color: crimson; */
+
+
+}
+.copos img{
+    width: 50px;
+    height: 50px;
+    display:block;
+    bottom: 90;
+    right: 10;
+    left: 50;
+    top: 90;
+    margin-left:auto ;
+    margin-right: auto;
+   
+}
+
+.copos img:hover{
+    width: 100px;
+    height:100px;
+    transition: width 0.4s, height 0.4s;
+    
+}
